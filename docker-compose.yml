@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+  scripts:
+    build:
+      context: ./
+      dockerfile: Dockerfile.rscripts
+    volumes:
+      - ./data:/usr/local/src/data
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile.node
+    depends_on:
+      - scripts
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/usr/src/app/data
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+#      MONGO_URL: mongodb://db:27017/mern-starter
+    stdin_open: true
+    tty: true

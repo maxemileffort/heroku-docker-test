@@ -1,0 +1,5 @@
+FROM rocker/tidyverse:latest as scripter
+RUN mkdir /usr/local/src/data
+WORKDIR /usr/local/src/myscripts
+COPY ./scripts /usr/local/src/myscripts
+CMD ["Rscript", "script-scrape-ALLPOSprojections.R"]

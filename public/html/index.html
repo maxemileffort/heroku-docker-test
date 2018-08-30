@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+  integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+  crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/index.css">
+  <title>WWCD || Fantasy Sports Analytics</title>
+</head>
+<body>
+  <div class="wrapper"> <!-- for flex box-->
+    <!-- landing page -->
+    <h2>Hero</h2>
+    <header class="top">
+      <div class="banner">
+        <a href="./index.html">
+          <h1>Winner Winner</h1>
+          <h1>Chicken Dinner</h1>
+        </a>
+      </div>
+      <div class="tagline">
+        <p>DFS Football Stats</p>
+      </div>
+    </header>
+    <h2>Nav Bar</h2>
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav"><i class="fas fa-bars"></i> Menu</a>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Your Lineups</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="social">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="results"></div>
+    <h2>Landing Page</h2>
+    <main>
+      <section class="">
+        <h2>Sign up for Free</h2>
+        <p>Tired of those rando jabronies beating you in the double-ups in DFS?</p>
+        <p>How about when your sleeper never even gets out of bed? Grinds the gears, am I right?</p>
+        <p>Maybe you just need an extra edge, to go to the next winning tier of the tournament plays?</p>
+        <div class="">
+          <a href="#">Join Team WWCD: <span class="underline">Signup</span></a>
+          <a href="#">Already have an account? <span class="underline">Login</span></a>
+        </div>
+      </section>
+      
+      <section class="hero">
+        <div class="news-buttons">
+          <button class="btn news-up" title="Previous story"><i class="fas fa-chevron-up"></i></button>
+          <div class="news-slider">
+            <div class="story">
+              <div class="story-text">
+                <h4>News Title</h4>
+                <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+              </div>
+            </div>
+            <div class="story">
+              <div class="story-text">
+                <h4>News Title</h4>
+                <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn news-down" title="Next story"><i class="fas fa-chevron-down"></i></button>
+        </div>
+      </section>
+    </main>
+    
+    <section class="">
+      <h2>Get in on the action!</h2>
+      <h3>Sign up Today</h3>
+      <form action="" class="" method="POST">
+        <input id="landing-username" type="text" placeholder="Username">
+        <input id="landing-email" type="email" placeholder="Email Address">
+        <input id="landing-submit" type="submit" value="Sign up!" class="btn">
+      </form>
+    </section>
+    <!-- end landing page -->
+    <hr>
+    <!-- signup page -->
+    <h2>Signup/Login Page</h2>
+    <main class="main--unflex">
+      <section class="">
+        <h3>Time to Join the Winning Team</h3>
+        <form action="" method="post">
+          <input id="reg-username" type="text" name="userame" placeholder="Username">
+          <input id="reg-email" type="email" name="email" placeholder="Email">
+          <input id="reg-password1" type="password" name="password1"  placeholder="Password">
+          <input id="reg-password2" type="password" name="password2" placeholder="Retype Password">
+          <input id="reg-submit" type="submit" value="Sign up" class="btn">
+        </form>
+        
+      </section>
+      <section class="benefits">
+        <p>What you get for joining:</p>
+        <ul>
+          <li>Free picks, every week!</li>
+          <li>Analysis of last week's top performers</li>
+          <li>Which stats correlate most with high performance</li>
+          <li>Pro members get unlimited numbers of lineups to compare!</li>
+        </ul>
+      </section>
+      <section class="">
+          <h3>Welcome Back</h3>
+          <form action="" method="POST">
+              <input id="login-email" type="email" name="email" placeholder="Email">
+              <input id="login-password" type="password" name="password"  placeholder="Password">
+              <input id="login-submit" type="submit" value="Login" class="btn">
+          </form>
+      </section>
+    </main>
+    <hr>
+    <!-- dashboard -->
+    <h2>Dashboard</h2>
+    <main class="">
+      <section>
+        <label for="">Position:
+          <select name="" id="">
+            <option value="">QB</option>
+            <option value="">RB</option>
+            <option value="">WR</option>
+            <option value="">K</option>
+            <option value="">DST</option>
+            <option value="">FLEX</option>
+          </select>
+        </label>
+        
+        <div>
+          <p>Rendered players based on select option and maybe some checkboxes for stats</p>
+        </div>
+      </section>
+      
+      <section>
+        <div>
+          <p>Optimal Draft Kings Lineup</p>
+          <textarea name="" id="" cols="50" rows="10" placeholder="area representation for lineup"></textarea>
+        </div>
+        <div>
+          <p>Optimal FanDuel Lineup</p>
+          <textarea name="" id="" cols="50" rows="10" placeholder="area representation for lineup"></textarea>
+        </div>
+      </section>
+      
+    </main>
+    
+    <section>
+      <p>Area for saved lineups</p>
+    </section>
+    <!-- end dashboard -->
+    <hr>
+    <!-- admin page -->
+    <h2>Admin Page</h2>
+    <main class="main--unflex">
+      <section class="admin__drag-and-drop--format">
+        <p>Drag and drop for salaries</p>
+      </section>
+      <section class="period">
+        <input type="number" name="season" id="season" placeholder="season" />
+        <input type="number" name="week" id="week" placeholder="week" />
+      </section>
+      <button class="btn admin-submit">Submit</button>
+      
+    </main>
+    <!-- end admin page -->
+    <hr>
+    <!-- admin-status page -->
+    <h2>Admin Status Page</h2>
+    <section class="admin__social-blast--format">
+      <p>Post to:</p>
+      <label for="">
+        <input type="checkbox" name="" id=""/>facebook
+      </label>
+      <br>
+      <label for="">
+        <input type="checkbox" name="" id=""/>twitter
+      </label>
+      <br>
+      <label for="">
+        <input type="checkbox" name="" id=""/>instagram
+      </label>
+      <br>
+      
+      <textarea name="" id="" cols="30" rows="10" placeholder="Status update"></textarea>
+      <br>
+      <button>Post</button>
+    </section>
+    <!-- end admin status -->
+    <hr>
+    <!-- news -->
+    <h2>News</h2>
+    <main class="main--unflex">
+      <div class="row">
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+        <div class="card story">
+          <div class="story-text">
+            <h4>News Title</h4>
+            <p>News Headline - News Blurb... <a href="#">Read Story</a></p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="row">
+        <a href="#">More Stories...</a>
+      </div>
+      
+    </main>
+    <!-- end news -->
+    <hr>
+    <!-- Footer -->
+    <h2>Footer</h2>
+    <footer role="contentinfo">
+      <nav class="flex-nav-footer">
+        <h4>Check us out and give us a follow:</h4>
+        <ul>
+          <li class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="social">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    
+  </div> <!-- end of wrapper div -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  
+</body>
+
+</html>
+
+
+

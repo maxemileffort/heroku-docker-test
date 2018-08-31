@@ -12,13 +12,11 @@ services:
       dockerfile: Dockerfile.node
     depends_on:
       - scripts
-    ports:
-      - "8080:8080"
     volumes:
       - ./data:/usr/src/app/data
     environment:
-      NODE_ENV: development
       PORT: 8080
-#      MONGO_URL: mongodb://db:27017/mern-starter
+    ports:
+      - '8080:80'
     stdin_open: true
     tty: true

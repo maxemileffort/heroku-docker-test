@@ -1,6 +1,8 @@
 FROM node:8 as backend
 WORKDIR /usr/src/app
 COPY . ./
-EXPOSE 8080
+ARG PORT=80
+ENV PORT $PORT
+EXPOSE $PORT 9229 9230
 RUN npm install
 CMD ["npm", "start"]

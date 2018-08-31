@@ -6,17 +6,17 @@ services:
       dockerfile: Dockerfile.rscripts
     volumes:
       - ./data:/usr/local/src/data
-  api:
+  web:
     build:
       context: ./
-      dockerfile: Dockerfile.node
+      dockerfile: Dockerfile.web
     depends_on:
       - scripts
     volumes:
       - ./data:/usr/src/app/data
-    environment:
-      PORT: 8080
     ports:
-      - '8080:80'
+      - "80:80"
+      - "9229:9229"
+      - "9230:9230"
     stdin_open: true
     tty: true
